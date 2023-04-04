@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImageThumbnailCell" customModule="dynamic_cell_tableview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AEo-jY-M09">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AEo-jY-M09" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4ER-GM-qrl"/>
+                <constraint firstItem="AEo-jY-M09" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hae-wc-VT4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AEo-jY-M09" secondAttribute="trailing" id="JMx-x3-Yry"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AEo-jY-M09" secondAttribute="bottom" id="Qaj-tN-tHJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageThumbnail" destination="AEo-jY-M09" id="NOc-Vf-yV9"/>
+            </connections>
+            <point key="canvasLocation" x="103" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
